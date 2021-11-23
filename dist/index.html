@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>NBA</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+
+  <body>
+    <div id="inputs">
+      <input
+        type="text"
+        placeholder="please enter name of a team"
+        class="inputTeamName"
+      />
+      <button class="getTeamName">GET ROSTER</button>
+    </div>
+    <div class="teamData"></div>
+
+    <div class="teamCard"></div>
+
+    <script id="players-template" type="text/x-handlebars-template">
+      <div class='teamData'>
+        {{#each allActivePlayers}}
+
+          <div class='playerCard'>
+            <p>{{firstName}} {{lastName}}</p>
+            <p>{{jersey}}</p>
+            <div class='photoCard'>
+              <img src='{{picture}}' class='photoCard' alt='NO PHOTO' />
+            </div>
+            <p>{{position}}</p>
+          </div>
+
+        {{/each}}
+      </div>
+    </script>
+
+    <script src="/jquery/dist/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>
