@@ -1,0 +1,37 @@
+#header {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  height: 43px;
+}
+
+.inputTeamName {
+  width: 90%;
+}
+
+.teamData {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  display: grid;
+  grid-gap: 10px;
+
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.playerCard {
+  display: grid;
+  top: 8px;
+  background-color: orange;
+  text-align: center;
+  /* height: 520px;
+  width: 320px; */
+  align-content: center;
+  border-radius: 16px;
+}
+
+.photoCard {
+  background-color: #f8f0f0;
+  align-content: center;
+}
