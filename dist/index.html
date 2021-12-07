@@ -16,6 +16,7 @@
         class="inputTeamName"
       />
       <button class="getTeamName">GET ROSTER</button>
+      <button id="dreamTeam">My Dream Team</button>
     </div>
     <div class="teamData"></div>
 
@@ -26,12 +27,12 @@
         {{#each allActivePlayers}}
 
           <div class='playerCard'>
-            <p>{{firstName}} {{lastName}}</p>
-            <p>{{jersey}}</p>
+            <p id="firstName" class="lastName">{{firstName}} {{lastName}}</p>
+            <p id="jersey">{{jersey}}</p>
             <div class='photoCard'>
               <img src='{{picture}}' class='photoCard' alt='NO PHOTO' />
             </div>
-            <p>{{position}}</p>
+            <p id="position">{{position}}</p>
           </div>
 
         {{/each}}
