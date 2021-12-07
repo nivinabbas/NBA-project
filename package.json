@@ -1,0 +1,26 @@
+{
+  "name": "nba-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nivinabbas/NBA-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nivinabbas/NBA-project/issues"
+  },
+  "homepage": "https://github.com/nivinabbas/NBA-project#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "handlebars": "^4.7.7",
+    "jquery": "^3.6.0",
+    "urllib": "^2.37.4"
+  }
+}
