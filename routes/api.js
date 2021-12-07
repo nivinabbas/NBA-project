@@ -37,4 +37,32 @@ router.get('/teams/:teamName', function (request, response) {
   );
 });
 
+
+router.put('/team', function(req, res) {
+  let teamName = req.body.teamName
+  let teamId = req.body.teamId
+  teamToIDs[`${teamName}`] = teamId
+  res.end()
+})
+
+
+
+let dreamPlayersTeam = []
+
+router.get('/dreamTeam', function(req, res) {
+
+    res.send(dreamPlayersTeam)
+   
+})
+
+router.post('/addPlayer', function(req, res) {
+    let player = req.body
+    if(dreamPlayersTeam.length<5) {
+      dreamPlayersTeam.push(player)
+    }
+    else{
+        console.log("You only can add 5 players")
+    }
+})
+
 module.exports = router;
